@@ -1,0 +1,6 @@
+root_dir = "dist"
+base_url = "https://su-ntu-ctp.github.io/cloud-engineering/"
+
+exclude = [
+    'https://linkedin.com/.*', # LinkedIn often blocks crawlers
+]
