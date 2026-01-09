@@ -6,12 +6,10 @@ import starlight from "@astrojs/starlight";
 export default defineConfig({
   site: "https://su-ntu-ctp.github.io",
   base: "/cloud-engineering",
-  redirects: {
-    "/": "/self-study/101/",
-  },
   integrations: [
     starlight({
       title: "Cloud Engineering",
+      lastUpdated: true,
       social: [
         {
           icon: "github",
