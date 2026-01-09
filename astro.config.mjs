@@ -4,6 +4,11 @@ import starlight from "@astrojs/starlight";
 
 // https://astro.build/config
 export default defineConfig({
+  site: "https://su-ntu-ctp.github.io",
+  base: "/cloud-engineering",
+  redirects: {
+    "/": "/self-study/101/",
+  },
   integrations: [
     starlight({
       title: "Cloud Engineering",
@@ -14,19 +19,11 @@ export default defineConfig({
           href: "https://github.com/su-ntu-ctp/cloud-engineering",
         },
       ],
+
       sidebar: [
-        
         {
-          label: "Guides",
-          items: [{ label: "Example Guide", slug: "guides/example" }],
-        },
-        {
-          label: "Self Study Materials",
-          autogenerate: { directory: "self-study-materials" },
-        },
-        {
-          label: "Reference",
-          autogenerate: { directory: "reference" },
+          label: "Self Study",
+          autogenerate: { directory: "self-study" },
         },
       ],
     }),
